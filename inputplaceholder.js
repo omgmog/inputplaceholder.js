@@ -18,8 +18,8 @@
                 var $aclass = $a.attr("class");
                 var $aid = $a.attr("id");
                 $('<input type="text" \
-                    tabindex="'+($ati?$ati:'')+'" \
-                    id="'+($aid?$aid:'')+'" \
+                    '+($ati?'tabindex="'+$ati+'" ':'')+'\
+                    '+($aid?'id="'+$aid+'" ':'')+'\
                     class="placeholder '+($aclass?$aclass:'')+'" \
                     value="'+$apt+'" />').insertBefore($a);
                 // if it's safe to assume that we won't have more than
